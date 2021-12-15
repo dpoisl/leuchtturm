@@ -157,7 +157,5 @@ if __name__ == "__main__":
         picked = pick_reservation(requests)
         update_availability(picked, availablility)
         remove_conflicting(requests, availablility)
-        print(f"Availability: {requests}")
         chosen.append(picked)
-        print("\n\n")
     print_chosen(chosen)
